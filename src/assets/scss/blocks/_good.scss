@@ -1,0 +1,116 @@
+.good {
+    &__title {
+        color: #000;
+        font-size: 26px;
+        font-weight: 400;
+        line-height: normal;
+    }
+    &__stats {
+        display: flex;
+        align-items: center;
+        margin-bottom: 10px;
+    }
+    &__stars {
+        display: flex;
+        align-items: center;
+        margin-right: 25px;
+        color: #000;
+        font-size: 24px;
+        font-weight: 400;
+        line-height: normal;
+        img {
+            display: block;
+            width: 20px;
+            height: 20px;
+            margin-right: 5px;
+        }
+        .icon-star {
+            color: #FFC107;
+        }
+    }
+    &__reviews {
+        color: #000;
+        font-size: 24px;
+        font-weight: 400;
+        line-height: normal;
+    }
+    &__info {
+        display: flex;
+    }
+    &__img {
+        width: 400px;
+        height: 470px;
+        img {
+            max-width: 95%;
+            max-height: 95%;
+        }
+    }
+    &__params {
+        position: relative;
+        margin-top: 50px;
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        column-gap: 10px;
+        row-gap: 25px;
+        grid-auto-flow: column;
+        &__title {
+            position: absolute;
+            top: -50px;
+            left: 0;
+            color: #000;
+            font-size: 22px;
+            font-weight: 400;
+            line-height: normal;
+        }
+        &__property {
+            color: #000;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: normal;
+            &__value {
+                color: #000;
+                font-size: 14px;
+                font-weight: 400;
+                line-height: normal;
+            }
+        }
+    }
+    &__to-cart {
+        width: 270px;
+        height: 150px;
+        border-radius: 5px;
+        border: 1px solid #000;
+        margin-left: 40px;
+        &__price {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin: 15px 10px 30px 10px;
+            &__new {
+                color: #000;
+                font-size: 30px;
+                font-weight: 400;
+                line-height: normal;
+            }
+            &__old {
+                color: #000;
+                font-size: 24px;
+                font-weight: 400;
+                line-height: normal;
+                text-decoration: line-through;
+            }
+        }
+        button {
+            width: calc(100% - 10px - 10px);
+            padding: 20px 27px;
+            border: none;
+            border-radius: 10px;
+            margin: 0 10px 5px 10px;
+            background: $main-color;
+            color: #FFF;
+            font-size: 20px;
+            font-weight: 400;
+            line-height: normal;
+        }
+    }
+}
